@@ -23,7 +23,7 @@ configureMainWagmi();
 watchAccountSetup(
 	document.querySelector<HTMLButtonElement>('#connectBtn')!,
 	document.querySelector<HTMLButtonElement>('#disconnectBtn')!,
-	document.querySelector<HTMLButtonElement>('#address')!
+	document.querySelector<HTMLDivElement>('#address')!
 );
 setupConnect(document.querySelector<HTMLButtonElement>('#connectBtn')!);
 setupDisconnect(document.querySelector<HTMLButtonElement>('#disconnectBtn')!);

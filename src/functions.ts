@@ -46,7 +46,7 @@ export async function connectWallet() {
 export function watchAccountSetup(
 	connectElement: HTMLButtonElement,
 	disconnectElement: HTMLButtonElement,
-	addressElement: HTMLButtonElement
+	addressElement: HTMLDivElement
 ) {
 	// setup event listener for account changes
 	const unwatch = watchAccount(
