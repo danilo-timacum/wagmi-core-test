@@ -2,17 +2,16 @@ import {
 	createClient,
 	configureChains,
 	mainnet,
-	getAccount,
 	watchAccount,
 	disconnect,
 } from '@wagmi/core';
 import { publicProvider } from '@wagmi/core/providers/public';
-import { connect, fetchEnsName } from '@wagmi/core';
+import { connect } from '@wagmi/core';
 import { InjectedConnector } from '@wagmi/core/connectors/injected';
 
 // main wagmi configuration setup
 export function configureMainWagmi() {
-	const { chains, provider, webSocketProvider } = configureChains(
+	const { provider, webSocketProvider } = configureChains(
 		[mainnet],
 		[publicProvider()]
 	);
